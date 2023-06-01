@@ -314,11 +314,11 @@ def make_df(objlist :list):
 if __name__ == "__main__":
 
 
-    ud_directory ="C:\\Users\\Ilinca V\\Uralic_UD\\"
+    ud_directory ="...\\Uralic_UD\\"
     text_files = [f for f in os.listdir(ud_directory) if f.endswith('.conllu')]
     languages = []
 
-    query_direc = "C:\\Users\\Ilinca V\\Documents\\query.txt"
+    query_direc = "...\\Documents\\query.txt"
     for i in text_files:
         obj1 = UD_Query(str(ud_directory+i),query_direc)
         languages.append(obj1)
