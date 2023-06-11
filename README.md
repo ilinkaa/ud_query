@@ -11,7 +11,7 @@ The query format is as follows:
   seconddeprel: nsubj, csubj/S
   seconddeppos: 
   
-With the fields on the left being mandatory and both dependency relations and pos tags can be specified. What comes after the slash indicates the label under which the relation is to be represented. 
+ Both dependency relations and pos tags can be specified, after the mandatory fields on the left. What comes after the slash indicates the label under which the dependendent / head is extracted, and is then combined with the other specified label based on their index in the file. 
 The data is then extracted and stored in a dataframe, which contains all the occurences of the relations found for each label combination. In the case of the example above, this corresponds to all the different
 word order combinations. 
 
@@ -19,16 +19,16 @@ word order combinations.
 and represented as a heatmap. Afterwards, cluster analysis is applied to the matrix, resulting in a dendrogram. 
 
 This was developed with the intent of exploring the extent to which the frequency of the different patterns for specific dependency relations can be used to group languages of the same family together. The issue of automatic
-language classification within the same family has been previously adressed by Liu (2014), in which different dependency measures are used to find common/diverging patterns among Romance languages. 
-Additionnally, the position of syntactic units has been used in order to explore the statistical relevance of Greenbergian universals. Here, we examine whether word/ component order as found in UD data can
+language classification within the same family has been previously adressed by Liu (2012), in which different dependency measures are used to find common/diverging patterns among Romance languages. 
+Additionally, the position of syntactic units has been used in order to explore the statistical relevance of Greenbergian universals (Gerdes, 2017). Here, we examine whether word/ component order as extracted from UD data can
 also be useful for quantitative typology/ language classification for languages with freer/ less predictable word order. For this, we measure word order, as well as the frequency of head-initial
 dependencies for four different syntactic constituent combinations: verb-object, verb-auxiliary, noun-adjective and noun-adposition, within the languages available on UD for two different language
-families: Uralic and Romance languages. For this, we choose the languages for which corpora bigger than 10K tokens are available, respectively Finnish, Estonian, Hungarian, Komi-Zyrian, Erzya and North Saami, French, Italian,
+families: Uralic and Romance languages. We choose the languages for which corpora bigger than 10K tokens are available, respectively Finnish, Estonian, Hungarian, Komi-Zyrian, Erzya and North Saami, French, Italian,
 Spanish,Portugese, Catalan and Romanian. We extract the frequencies for the different combinations, as well as word order, organize them into vectors and use cosine distance to obtain a matrix which is then
 used for clustering using the average method. 
 
 The goal is to determine whether clustering for languages for which word order is more fixed is more likely to be succesful when compared to languages with freer word/constituent order. Moreover, we also look at how
-constituent order correlates for the four different combinations. 
+constituent order correlates for the four different syntactic element combinations. 
 
 After compiling the different frequency ration into vectors, we obtain the following heatmap for Uralic languages:
 
@@ -42,8 +42,7 @@ With regards to clustering, we obtain the following:
 ![image](https://github.com/ilinkaa/ud_query/assets/92783469/7582b6a7-cdcc-4a37-9ae0-7a3c9b86c376)
 
 
-Hungarian has its own branch, with the other languages being grouped together. The other group is split into a cluster containing Ezrya and Komi-Zyrian, and another in which Finnish is grouped together with Estonian, and the resulting group is joined with North Saami. The languages represented here would fall into 5 branches: Ugric, Permic, Mordvinic and Saamic. However, it is important to note that Uralic language 
-classification is still up for debate. Here, Estonian and Finnish are correctly grouped together, both falling into the commonly accepted Batlo-Finnic group. Saami however should constitue its own branch, but should be closer to Finnic languages than it is to Hungarian.  
+Hungarian has its own branch, with the other languages being grouped together. The other group is split into a cluster containing Ezrya and Komi-Zyrian, and another in which Finnish is grouped together with Estonian, and the resulting group is joined with North Saami. The languages represented here would fall into 5 branches: Ugric, Permic, Mordvinic and Saamic. Here, Estonian and Finnish are correctly grouped together, both falling into the commonly accepted Batlo-Finnic group. Saami however should constitue its own branch, but should be closer to Finnic languages than it is to Hungarian.  
 Furthermore, Komi and Ezrya might be grouped together because both of these languages on UD have been produced based on the same translations from Russian, which might be reflected in the dataset. 
 
 In the case of Romance languages, we obtained the following clusters: 
@@ -71,10 +70,9 @@ verb-object, like in the data observed by Courtin.
 
 Therefore, we can see that different elements can reflect language classification in different ways, and that the data available on UD might help investigate the general trends.
 
-**References 
+**References**
 
 Alzetta, C., Dell’Orletta, F., Montemagni, S., & Venturi, G. (2018, May). Universal dependencies and quantitative typological trends. A case study on word order. In *Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018).
-
 
 Chen, X., & Gerdes, K. (2017, September). Classifying languages by dependency structure. Typologies of delexicalized universal dependency treebanks. In *Proceedings of the fourth international conference on dependency linguistics (Depling 2017)*
  (pp. 54-63).
