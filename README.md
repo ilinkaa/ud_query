@@ -32,15 +32,18 @@ constituent order correlates for the four different combinations.
 
 After compiling the different frequency ration into vectors, we obtain the following heatmap for Uralic languages:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/177accf3-bf5d-45ec-a583-f917010d6573/Untitled.png)
+![image](https://github.com/ilinkaa/ud_query/assets/92783469/d25bd6ce-bda6-4547-87d4-9bf8bd9980c8)
+
+
 
 Hungarian (Ugric) is set apart from other Uralic languages, being the most different from Finnish (Balto-Finnic) and closest to Komi-Zyrian (Permic).
 With regards to clustering, we obtain the following: 
 
-Hungarian has its own branch, with the other languages being grouped together. The other group is split into a cluster containing Ezrya and Komi-Zyrian, and another in which Finnish is grouped together with North Saami, and 
-the resulting group is joined with Estonian. Based on (REFERENCE), the languages represented here would fall into 5 branches: Ugric, Permic, Mordvinic and Saamic. However, it is important to note that Uralic language 
-classification is still up for debate. For instance, if we take the proposed Finno-Permic supra family (which would group every language in the dataset but Hungarian together), our results are in line with that proposed classficiation.
-Moreover, some scholars have in the past proposed Saami and Finnish to be part of the same branch. 
+![image](https://github.com/ilinkaa/ud_query/assets/92783469/7582b6a7-cdcc-4a37-9ae0-7a3c9b86c376)
+
+
+Hungarian has its own branch, with the other languages being grouped together. The other group is split into a cluster containing Ezrya and Komi-Zyrian, and another in which Finnish is grouped together with Estonian, and the resulting group is joined with North Saami. The languages represented here would fall into 5 branches: Ugric, Permic, Mordvinic and Saamic. However, it is important to note that Uralic language 
+classification is still up for debate. Here, Estonian and Finnish are correctly grouped together, both falling into the commonly accepted Batlo-Finnic group. Saami however should constitue its own branch, but should be closer to Finnic languages than it is to Hungarian.  
 Furthermore, Komi and Ezrya might be grouped together because both of these languages on UD have been produced based on the same translations from Russian, which might be reflected in the dataset. 
 
 In the case of Romance languages, we obtained the following clusters: 
