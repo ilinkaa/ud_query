@@ -71,7 +71,7 @@ verb-object, like in the data observed by Courtin.
 
 Therefore, we can see that different elements can reflect language classification in different ways, and that the data available on UD might help investigate the general trends.
 
-#References 
+**References 
 
 Alzetta, C., Dell’Orletta, F., Montemagni, S., & Venturi, G. (2018, May). Universal dependencies and quantitative typological trends. A case study on word order. In *Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018).
 
