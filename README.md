@@ -69,7 +69,21 @@ with the rest). This can be explained by the fact that the language sample for o
 Here, the strongest correlations are found between verb-object and verb-auxiliary. Verb-object seems to correlate the most with other features, while noun-adjective is the feature that correlates the least, particularly with 
 verb-object, like in the data observed by Courtin. 
 
-Therefore, we can see that different elements can reflect language classification in different ways, and that the data available on UD might help investigate the general trends. 
+Therefore, we can see that different elements can reflect language classification in different ways, and that the data available on UD might help investigate the general trends.
+
+#References 
+
+Alzetta, C., Dell’Orletta, F., Montemagni, S., & Venturi, G. (2018, May). Universal dependencies and quantitative typological trends. A case study on word order. In *Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018).
+
+
+Chen, X., & Gerdes, K. (2017, September). Classifying languages by dependency structure. Typologies of delexicalized universal dependency treebanks. In *Proceedings of the fourth international conference on dependency linguistics (Depling 2017)*
+ (pp. 54-63).
+
+Courtin, M. (2018). Mesures de distances syntaxiques entre langues à partir de treebanks.
+
+Liu, H., & Xu, C. (2012). Quantitative typological analysis of Romance languages. Poznań Studies in Contemporary Linguistics, 48(4), 597-625.
+
+
 
 
 
